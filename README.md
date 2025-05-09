@@ -13,7 +13,7 @@ FileZilla is the software we can use to upload and fetch files from supercompute
 >Password: ASURITE Password
 >Port: 22
 
-![[Fig1.png]]
+![[Figs/Fig1.png]]
 
 Then click the `Quickconnect` button. Click Yes for all the popped-out dialogues. On the right side of the window, the home directory will appear. The home directory has a limit of 100 GB storage limit. It is recommended to put all the code in the home directory, and all the data in scratch directory.
 
