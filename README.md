@@ -17,30 +17,30 @@ FileZilla is the software we can use to upload and fetch files from supercompute
 >
 >Port: 22
 
-![[Fig1.png]]
+![Fig1](Fig1.png)
 
 Then click the `Quickconnect` button. Click Yes for all the popped-out dialogues. On the right side of the window, the home directory will appear. The home directory has a limit of 100 GB storage limit. It is recommended to put all the code in the home directory, and all the data in scratch directory.
 
 To enter the scratch directory, change the address of remote site to `/scratch/ASURITE ID`
 
-![[Fig2.png]]
+![Fig2](Fig2.png)
 
 Remember that periodically the files in the scratch directory get deleted so after the job is completed, remove the files from the scratch directory and download it elsewhere.
 
-# Setting up the Denoising Environment
-## Accessing the Sol Supercomputer 
+## Setting up the Denoising Environment
+### Accessing the Sol Supercomputer
 
 Go to this website: [https://ood04.sol.rc.asu.edu/pun/sys/dashboard](https://ood04.sol.rc.asu.edu/pun/sys/dashboard)
 
-![[Fig3.png]]
+![Fig3](Fig3.png)
 
 Click on `Files`  →  `Home directory`
 
-![[Fig4.png]]
+![Fig4](Fig4.png)
 
 Click on `Open in Terminal`. A new window of command lines will pop up.
 
-![[Fig5.png]]
+![Fig5](Fig5.png)
 
 Now we have successfully accessed the supercomputer.
 
@@ -56,7 +56,7 @@ interactive -c 4 --mem=64G
 
 It will put this job of interactive session into queue. But normally the queueing time is pretty short. Here we show a case of starting an interactive session only with 1 core and 48GB of memory.
 
-![[Fig6.png]]
+![Fig6](Fig6.png)
 
 Now we are in an interactive session.
 
@@ -80,10 +80,12 @@ cd UDVD-MF-Denoising
 mamba env create -n denoise-HDR -f environment.yaml
 ```
 
-![[Fig7.png]]
+![Fig7](Fig7.png)
 
 The installation might take a while. Sit back and relax.
-![[Fig8.png]]
+
+![Fig8](Fig8.png)
+
 To test whether the environment is successfully installed, we can run following command. 
 
 ``` Shell
@@ -92,7 +94,7 @@ source activate denoise-HDR
 
 If no error message and you see the `(denoise-HDR)` appears at the beginning of the line, congrats! You have successfully setup the environment.
 
-![[Fig9.png]]
+![Fig9](Fig9.png)
 
 *(Optional)* To terminate the interactive session, just run `exit`.
 
@@ -159,7 +161,7 @@ It is recommended to edit the `.sh` file in VS Code. You can also edit it in tex
 dos2unix *.sh
 ```
 
-To submit this job to super computer, change directory of this `.sh` file in **the command window** (See [[#Accessing the Sol Supercomputer]]) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
+To submit this job to super computer, change directory of this `.sh` file in **the command window** (See [Accessing the Sol Supercomputer](https://github.com/YFWang-97/UDVD-Guide-for-ASU-Sol/edit/main/README.md#accessing-the-sol-supercomputer)) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
 
 ```Shell
 cd /home/ywan1240/test/
