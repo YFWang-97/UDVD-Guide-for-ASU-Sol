@@ -28,7 +28,7 @@ To enter the scratch directory, change the address of remote site to `/scratch/A
 Remember that periodically the files in the scratch directory get deleted so after the job is completed, remove the files from the scratch directory and download it elsewhere.
 
 ## Setting up the Denoising Environment
-### [Accessing the Sol Supercomputer](#Accessing-the-Sol-Supercomputer)
+### [Accessing the Sol Supercomputer](#accessing-the-sol-supercomputer)
 
 Go to this website: [https://ood04.sol.rc.asu.edu/pun/sys/dashboard](https://ood04.sol.rc.asu.edu/pun/sys/dashboard)
 
@@ -161,7 +161,7 @@ It is recommended to edit the `.sh` file in VS Code. You can also edit it in tex
 dos2unix *.sh
 ```
 
-To submit this job to super computer, change directory of this `.sh` file in **the command window** \(See <a href='#Accessing-the-Sol-Supercomputer'>Accessing the Sol Supercomputer</a> \) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
+To submit this job to super computer, change directory of this `.sh` file in **the command window** (See [Accessing the Sol Supercomputer](#accessing-the-sol-supercomputer)) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
 
 ```Shell
 cd /home/ywan1240/test/
