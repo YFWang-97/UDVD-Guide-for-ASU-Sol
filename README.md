@@ -1,4 +1,5 @@
-# Software Preparation *(Optional)*
+# UDVD Setup Guide for ASU Sol
+## Software Preparation *(Optional)*
 Install the following software:
 
 - FileZilla
@@ -9,8 +10,11 @@ Install the following software:
 FileZilla is the software we can use to upload and fetch files from supercomputer storage. To access, type in the following information:
 
 >Host: sol.asu.edu
+>
 >Username: ASURITE ID
+>
 >Password: ASURITE Password
+>
 >Port: 22
 
 ![[Figs/Fig1.png]]
