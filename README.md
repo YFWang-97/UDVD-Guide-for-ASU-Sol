@@ -17,7 +17,7 @@ FileZilla is the software we can use to upload and fetch files from supercompute
 >
 >Port: 22
 
-![[Figs/Fig1.png]]
+![[Fig1.png]]
 
 Then click the `Quickconnect` button. Click Yes for all the popped-out dialogues. On the right side of the window, the home directory will appear. The home directory has a limit of 100 GB storage limit. It is recommended to put all the code in the home directory, and all the data in scratch directory.
 
@@ -40,11 +40,11 @@ Click on `Files`  →  `Home directory`
 
 Click on `Open in Terminal`. A new window of command lines will pop up.
 
-![[Pasted image 20250508155807.png]]
+![[Fig5.png]]
 
 Now we have successfully accessed the supercomputer.
 
-## Run an Interactive Session
+### Run an Interactive Session
 
 The installation process needs a certain amount of memory and running time. It is required by ASU Research Computing team to run this through a so-called interactive session, which is basically a job.
 
@@ -56,11 +56,11 @@ interactive -c 4 --mem=64G
 
 It will put this job of interactive session into queue. But normally the queueing time is pretty short. Here we show a case of starting an interactive session only with 1 core and 48GB of memory.
 
-![[Fig7.png]]
+![[Fig6.png]]
 
 Now we are in an interactive session.
 
-## Setting up the Environment
+### Setting up the Environment
 
 First we need to activate mamba. Run: 
 ```shell
@@ -80,15 +80,23 @@ cd UDVD-MF-Denoising
 mamba env create -n denoise-HDR -f environment.yaml
 ```
 
-![[Fig8.png]]
+![[Fig7.png]]
 
 The installation might take a while. Sit back and relax.
+![[Fig8.png]]
+To test whether the environment is successfully installed, we can run following command. 
 
-To test whether the environment is successfully installed, we can run following command. If no error message, congrats!
+``` Shell
+source activate denoise-HDR
+```
 
-*(Optional)* To terminate the interactive session, just run `exit()`.
+If no error message and you see the `(denoise-HDR)` appears at the beginning of the line, congrats! You have successfully setup the environment.
 
-# Run a Denoising Job
+![[Fig9.png]]
+
+*(Optional)* To terminate the interactive session, just run `exit`.
+
+## Run a Denoising Job
 
 
 All the denoising tasks are run as supercomputer jobs on ASU Sol. Here is an example file `submit_1.sh`:
