@@ -161,7 +161,7 @@ It is recommended to edit the `.sh` file in VS Code. You can also edit it in tex
 dos2unix *.sh
 ```
 
-To submit this job to super computer, change directory of this `.sh` file in **the command window** (See [Accessing the Sol Supercomputer](https://github.com/YFWang-97/UDVD-Guide-for-ASU-Sol/edit/main/README.md#accessing-the-sol-supercomputer)) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
+To submit this job to super computer, change directory of this `.sh` file in **the command window** (See [Accessing the Sol Supercomputer](https://github.com/YFWang-97/UDVD-Guide-for-ASU-Sol/main/README.md#accessing-the-sol-supercomputer)) and run the submit command. For example, if the submission file `submit_1.sh`is in folder `/home/ywan1240/test/`:
 
 ```Shell
 cd /home/ywan1240/test/
